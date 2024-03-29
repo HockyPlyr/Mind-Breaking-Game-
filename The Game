@@ -1,0 +1,21 @@
+print("Mind Breaking Game!")
+print("")
+def game():
+  while True:
+    import random
+      
+    print("You are in a room with two doors. One is red and the other is blue.")
+    question = input("Which door do you choose? Red or Blue? ")
+    answer = random.randint(1,2)
+    if (question == "Red" and answer == 1) or (question == "Blue" and answer == 2): 
+      print("Good job! You go through the door only to see . . .")
+      break
+    else:
+      print("Wrong door. Try again.")
+      continue
+game()
+game()
+game()
+game()
+game()
+print("Wow, your mind must be broken by now, but you have escaped. Congrats! Show this to your friends to destroy their minds and lives!")
